@@ -5,7 +5,7 @@
     </div>
     <div class="vc-alpha-gradient" :style="{background: gradientColor}"></div>
     <div class="vc-alpha-container" ref="container"
-        @mousedown="handleMouseDown"
+        @mousedown.prevent="handleMouseDown"
         @touchmove="handleChange"
         @touchstart="handleChange">
       <div class="vc-alpha-pointer" :style="{left: colors.a * 100 + '%'}">

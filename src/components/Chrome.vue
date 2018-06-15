@@ -24,7 +24,7 @@
         <div class="vc-chrome-fields" v-show="fieldsIndex === 0">
           <!-- hex -->
           <div class="vc-chrome-field">
-            <ed-in label="hex" :value="colors.hex" @change="inputChange"></ed-in>  
+            <ed-in label="hex" :value="colors.hex" @change="inputChange"></ed-in>
           </div>
         </div>
         <div class="vc-chrome-fields" v-show="fieldsIndex === 1">
@@ -47,7 +47,7 @@
           <div class="vc-chrome-field">
             <ed-in label="h" :value="hsl.h" @change="inputChange"></ed-in>
           </div>
-          <div class="vc-chrome-field"> 
+          <div class="vc-chrome-field">
             <ed-in label="s" :value="hsl.s" @change="inputChange"></ed-in>
           </div>
           <div class="vc-chrome-field">
@@ -60,9 +60,9 @@
         <!-- btn -->
         <div class="vc-chrome-toggle-btn" aria-label="toggleViews" @click="toggleViews">
           <div class="vc-chrome-toggle-icon">
-            <svg style="width:24px; height:24px" viewBox="0 0 24 24" 
-              @mouseover="showHighlight" 
-              @mouseenter="showHighlight" 
+            <svg style="width:24px; height:24px" viewBox="0 0 24 24"
+              @mouseover="showHighlight"
+              @mouseenter="showHighlight"
               @mouseout="hideHighlight">
               <path fill="#333" d="M12,18.17L8.83,15L7.42,16.41L12,21L16.59,16.41L15.17,15M12,5.83L15.17,9L16.58,7.59L12,3L7.41,7.59L8.83,9L12,5.83Z" />
             </svg>
@@ -70,7 +70,7 @@
           <div class="vc-chrome-toggle-icon-highlight" v-show="highlight"></div>
         </div>
         <!-- btn -->
-      </div>      
+      </div>
     </div>
   </div>
 </template>

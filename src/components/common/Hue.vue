@@ -1,12 +1,12 @@
 <template>
   <div :class="['vc-hue', directionClass]">
     <div class="vc-hue-container" ref="container"
-      @mousedown="handleMouseDown"
+      @mousedown.prevent="handleMouseDown"
       @touchmove="handleChange"
       @touchstart="handleChange">
       <div class="vc-hue-pointer" :style="{top: pointerTop, left: pointerLeft}">
         <div role="huePicker" class="vc-hue-picker"></div>
-      </div>  
+      </div>
     </div>
   </div>
 </template>

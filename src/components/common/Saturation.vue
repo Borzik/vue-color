@@ -2,7 +2,7 @@
   <div role="saturationPanel" class="vc-saturation"
     :style="{background: bgColor}"
     ref="container"
-    @mousedown="handleMouseDown"
+    @mousedown.prevent="handleMouseDown"
     @touchmove="handleChange"
     @touchstart="handleChange">
     <div class="vc-saturation--white"></div>
